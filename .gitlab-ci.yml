@@ -1,0 +1,9 @@
+#发布到npm仓库
+publish_npm:
+  stage: deploy
+  script:
+    - npm publish
+  only:
+    - /^v\d+.\d+.\d+.*$/
+  tags:
+    - node

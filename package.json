@@ -1,0 +1,25 @@
+{
+  "name": "gulp-common-tasks",
+  "version": "0.0.1",
+  "description": "common gulp tasks set",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:/danwime/gulp-common-tasks.git"
+  },
+  "keywords": [
+    "gulp",
+    "common",
+    "tasks"
+  ],
+  "author": "demon <demon@danwi.me>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-print": "^2.0.1",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5"
+  }
+}
