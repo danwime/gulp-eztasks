@@ -1,11 +1,11 @@
 {
-  "name": "gulp-common-tasks",
+  "name": "gulp-eztasks",
   "version": "0.0.1",
   "description": "common gulp tasks set",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:/danwime/gulp-common-tasks.git"
+    "url": "git@github.com:/danwime/gulp-eztasks.git"
   },
   "keywords": [
     "gulp",
