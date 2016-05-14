@@ -5,5 +5,7 @@
 module.exports = {
   babel: require('./tasks/babel'),
   clean: require('./tasks/clean'),
-  sync: require('./tasks/sync')
+  sync: require('./tasks/sync'),
+  minijs: require('./tasks/minijs'),
+  minicss: require('./tasks/minicss')
 };
