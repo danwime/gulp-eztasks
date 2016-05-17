@@ -44,14 +44,14 @@ module.exports = function (src, dist, isWatch, option) {
             })
             .pipe(gulp.dest(dist))
             .on('end', function () {
-              util.log('[Babel] 文件: ' + obj.path.replace(obj.base, '') + '编译成功!');
+              util.log('[Babel] 文件: ' + obj.path.replace(obj.base, '') + ' 编译成功!');
             });
         } else if (obj.event === 'unlink') {
           var distFilePath = obj.path.replace(obj.cwd, obj.cwd + '/' + dist).replace(/(.*)(\..{1,6}$)/, '$1.js');
           return gulp.src(distFilePath)
             .pipe(clean())
             .pipe(print(function () {
-              return '[Babel] 文件: ' + obj.path.replace(obj.base, '') + '删除成功!';
+              return '[Babel] 文件: ' + obj.path.replace(obj.base, '') + ' 删除成功!';
             }));
         }
       });
