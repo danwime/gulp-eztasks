@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - '6'
+
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: admin@danwi.me
+  api_key:
+    secure: "IIlRpC8PAsEqN9XwbEngwYS1kDa7NKp59sd+pr2e1mz+1X/0jXB8ldZNEuNHengKKeiXHeEMycxYiXTM3eNvZhwlqh+xywGK9GhyniV6fD+/u8TYYZrSrnT7nEGk0bNBqjBXplQw40EQP5wlsr6TzVfAg+cbnRm56H3hLec/yrRRtpUsqK8AQctvMOdxHuHXxTZf2bPBWSxm16flPs79t4xaFDIOjbB2DhLppwUZuF7+PpDXZicZxjVcdO/LrWTYxk7pSiVw/qmtvtXozoK0hZNvLXKdEk9si9NX7uaMngg47vumq6Iwgi8BHVUhdQ4Z/UxdwsMlzKxXzpg+3LyfivMkJ4E/ikMvEAJiUV6lVkwX6bk+/4eKdmFxFt8tzHoXQ22CZD/HIBpPsAKzdDV5IpB8NbK2/yTb287tdwYOe0C0aW+QuU0O5zPrbMz/hpUjmPnRezAE07ueqi8p1egwjlY1iCJ3GfmNYx8EIP051iJ65Rb2kmFSBrNAoEcLxHt7XJj6HbE36C+kCaKoyBeqYA0uHBhw7YFKbFpw3S48daJcqcpBM4VDG5dhXEM1SvCdG+DVY+5mMLPqD/eA7SBEINS5EZuGFs2A2B9Pe1LnOIBE59blr9Yj8p6w1yLhOpesIrVRLUmWSFQTCBIOJs0EW2rxcp2fHNnfkTCNpy9Svpo="
+  on:
+    branch: master
+    tags: true
+    repo: danwime/gulp-eztasks
