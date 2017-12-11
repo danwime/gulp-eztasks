@@ -7,5 +7,6 @@ module.exports = {
   clean: require('./tasks/clean'),
   sync: require('./tasks/sync'),
   minijs: require('./tasks/minijs'),
-  minicss: require('./tasks/minicss')
+  minicss: require('./tasks/minicss'),
+  typscript: require('./tasks/typescript')
 };
