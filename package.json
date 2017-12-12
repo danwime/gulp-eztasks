@@ -1,6 +1,6 @@
 {
   "name": "gulp-eztasks",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "common gulp tasks set",
   "main": "index.js",
   "repository": {

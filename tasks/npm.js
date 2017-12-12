@@ -17,12 +17,8 @@ module.exports = function (scriptName, workDir, title) {
         util.log('启动进程: ' + title + ' in ' + workDir);
         if (scriptName) {
             var ps = spawn('npm', ['run', scriptName], {cwd: workDir});
-            ps.stdout.on('data', function (data) {
-                console.log(data.toString())
-            });
-            ps.stderr.on('data', function (data) {
-                console.error(data.toString())
-            });
+            ps.stdout.pipe(process.stdout);
+            ps.stderr.pipe(process.stderr);
             ps.on('close', function (code) {
                 if (code === 0) {
                     util.log('进程 ' + title + ' 完成');
