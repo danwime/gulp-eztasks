@@ -9,5 +9,6 @@ module.exports = {
     minijs: require('./tasks/minijs'),
     minicss: require('./tasks/minicss'),
     typscript: require('./tasks/typescript'),
-    npm: require('./tasks/npm')
+    npm: require('./tasks/npm'),
+    expect: require('./tasks/expect')
 };
