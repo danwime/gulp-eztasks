@@ -8,7 +8,7 @@ var path = require('path');
 var fs = require('fs');
 
 /**
- * 压缩指定的js文件
+ * 等待文件存在,然后启动gulp任务
  * @param filesToWait   需要等待的文件列表(非glob)
  * @param tasks         任务列表,run-sequence形式
  * @returns {Function}  gulp任务(Task)
