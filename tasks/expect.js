@@ -32,6 +32,12 @@ module.exports = function () {
             }
         }
 
+        if (remainingFiles.length <= 0) {
+            tasks.push(done);
+            run.apply(this, tasks);
+            return
+        }
+
         var watcher = watch(filesToWait, function (file) {
             if (file.event === 'add') {
                 if (remainingFiles.indexOf(file.path) >= 0) {
